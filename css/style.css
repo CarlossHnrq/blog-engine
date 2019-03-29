@@ -11,6 +11,7 @@ ul{
 }
 a{
 	text-decoration: none;
+	color: black;
 }
 img{
 	display: block;
@@ -19,6 +20,9 @@ img{
 *{
 	box-sizing: border-box;
 }
+
+/*superinfo*/
+
 .superinfo-bg{
 	background: rgb(226, 229, 231);
 	height: 40px;
@@ -32,7 +36,7 @@ img{
 	align-content: center;
 }
 .superinfo span{
-	color: #00a651;
+	color: #6ea6af;;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -45,4 +49,58 @@ img{
 	border-radius: 25px; 
 	border: 1px solid transparent;
 	line-height: 17px;
+}
+/*header*/
+
+.menu-bg{
+	background: white;
+	height: 80px;
+}
+.space{
+	padding-left: 200px;
+}
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid rgb(226, 229, 231);
+}
+.menu-logo{
+	font-family: "baloo chettan";
+	font-size: 35px;
+}
+.menu-form input{
+	width: 200px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border-color: rgb(226, 229, 231);
+}
+.menu-form button{
+	background: white;
+	border-color: transparent;
+	cursor: pointer;
+}
+/*nav*/
+.nav-bg{
+	background: transparent;
+}	
+.menu-nav{
+	padding: 16px 20px;
+	height: 48px;
+}
+.menu-nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.menu-nav a{
+	display: block;
+	color: #878787;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0px 10px;
+	padding: 14px;
 }
