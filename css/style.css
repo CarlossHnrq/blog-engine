@@ -36,14 +36,14 @@ img{
 	align-content: center;
 }
 .superinfo span{
-	color: #6ea6af;;
+	color: #6ea6af;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 .superinfo a{
 	margin-right: 20px;
-	background: #000;
+	background: #6ea6af;
 	color: #fff;
 	padding: 5px 20px;
 	border-radius: 25px; 
@@ -74,7 +74,7 @@ img{
 	width: 200px;
 	padding: 10px 20px;
 	border-radius: 5px;
-	border-color: rgb(226, 229, 231);
+	border-color: #6ea6af;
 }
 .menu-form button{
 	background: white;
