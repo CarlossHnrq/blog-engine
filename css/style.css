@@ -40,9 +40,10 @@ img{
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
+	padding: 34px;
 }
 .superinfo a{
-	margin-right: 20px;
+	margin-right: 34px;
 	background: #6ea6af;
 	color: #fff;
 	padding: 5px 20px;
@@ -57,7 +58,7 @@ img{
 	height: 80px;
 }
 .space{
-	padding-left: 200px;
+	padding-left: 264px;
 }
 .menu{
 	display: flex;
@@ -80,13 +81,14 @@ img{
 	background: white;
 	border-color: transparent;
 	cursor: pointer;
+	margin-right: 34px;
 }
 /*nav*/
 .nav-bg{
 	background: transparent;
 }	
 .menu-nav{
-	padding: 16px 20px;
+	padding: 0px 20px;
 	height: 48px;
 }
 .menu-nav ul{
@@ -120,3 +122,48 @@ img{
 	font-size: 16px;
 	color: inherit;
 }
+
+/*sign-in form*/
+
+.form-background{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 40px 250px;
+}
+.info-form-sign-in h2{
+	font-size: 40px;
+	color: #4b4949;
+	font-weight: normal;
+	line-height: 1.5em;
+}
+.info-form-sign-in p{	
+	color: #4b4949;
+	font-size: 20px;
+}
+.info-form-sign-in a{
+	margin-top: : 20px;
+	background: #6ea6af;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 25px; 
+	border: 1px solid transparent;
+	line-height: 17px;
+}
+.form-sign-in{
+	background: #d7d7d7;
+	padding: 20px;
+	border-radius: 20px;
+}
+.form-sign-in input{
+	margin: 10px;
+	width: 300px;
+	border-radius: 30px;
+	border-color: transparent;
+	height: 50px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+
+
