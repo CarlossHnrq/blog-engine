@@ -14,11 +14,11 @@
 					
 				</div>
 				<div class="menu-logo">
-					<a href="">Blog Engine</a>
+					<a href="/">Blog Engine</a>
 				</div>
 				<div class="menu-form">
 					<form>
-						<input type="text" name="search" placeholder="Search..">
+						<input type="text" name="search" placeholder="Search...">
 						<button type="submit"><i class="fas fa-search"></i></button>
 					</form>
 				</div>
