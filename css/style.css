@@ -115,6 +115,7 @@ img{
 	background: #6ea6af;
 	align-items: center;
 	height: 50px;
+
 }
 .footer p{
 	flex: 1;
@@ -142,13 +143,14 @@ img{
 	font-size: 20px;
 }
 .info-form-sign-in a{
-	margin-top: : 20px;
-	background: #6ea6af;
+	margin-top: 20px;
+	background: #171fc9;
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 25px; 
 	border: 1px solid transparent;
 	line-height: 17px;
+	font-size: 20px;
 }
 .form-sign-in{
 	background: #d7d7d7;
@@ -156,14 +158,30 @@ img{
 	border-radius: 20px;
 }
 .form-sign-in input{
-	margin: 10px;
 	width: 300px;
 	border-radius: 30px;
 	border-color: transparent;
 	height: 50px;
+	font-size: 20px;
 	padding: 10px;
+}
+.separate-info{
+	padding: 10px;
+}
+.botao-sign-in{
+	background: #171fc9;
+	color: #fff;
+	border-radius: 25px; 
+	border: 1px solid transparent;
+	line-height: 17px;
+	padding: 7px 40px;
 	font-size: 20px;
 }
-
+.separate-sign-in{
+	margin: 20px;
+}
+.link-sign-in{
+	color: #4b4949;
+}
 
 

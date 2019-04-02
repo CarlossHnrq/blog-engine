@@ -4,33 +4,35 @@
 <section>
 	<div class="form-background">
 		<div class="info-form-sign-in">
-			<div>
+			<div class="separate-info">
 				<h2>Discover</h2>
 				<p>a wealth of genuine, unique information</p>
 			</div>
-			<div>
+			<div class="separate-info">
 				<h2>Create</h2>
 				<p>original, in-depht, usefull, media-rich articles</p>
 			</div>
-			<div>
+			<div class="separate-info">
 				<h2>Connect</h2>
 				<p>with a passionate community of writers and enthusiasts</p>
 			</div>
-			<a href="sing-up.php">Sign up now!</a>
+			<div class="separate-info">
+				<a href="sing-up.php">Sign up now!</a>
+			</div>
 		</div>
 		<div>
 			<form class="form-sign-in">
-					<div>
+					<div class="separate-sign-in">
 						<input type="text" name="username" placeholder="Username">
 					</div>
-					<div>
+					<div class="separate-sign-in">
 						<input type="text" name="password" placeholder="Password">
 					</div>
-					<div>
-						<button><a href="/">Sign in</a></button>
+					<div class="separate-sign-in">
+						<a href="/" class="botao-sign-in">Sign in</a>
 					</div>
-					<div>
-						<a href="/" class="">Sign up |</a><a href="/">Can't access your account?</a>
+					<div class="separate-sign-in">
+						<a href="/" class="link-sign-in">Sign up</a> | <a href="/" class="link-sign-in">Can't access your account?</a>
 					</div>
 			</form>
 		</div>
