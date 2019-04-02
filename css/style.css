@@ -126,6 +126,11 @@ img{
 
 /*sign-in form*/
 
+.sign-in-background{
+	background: #fff;
+	padding: 80px 0;
+}
+
 .form-background{
 	display: flex;
 	flex-wrap: wrap;
@@ -184,4 +189,59 @@ img{
 	color: #4b4949;
 }
 
+/*sign-up form*/
+
+.sign-up-background{
+	background: #016087;
+	padding: 100px;
+}
+
+.sign-up-form-background{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px ;
+	background: #fff;
+	margin: 0 auto 16px;
+    max-width: 400px;
+    padding: 16px;
+    border-radius: 3px;
+}
+.sign-up-form{
+	display: flex;
+	flex-wrap: wrap;
+	display: block;
+}
+.sign-up-form input{
+	padding: 10px 0;
+	margin-bottom: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+.sign-up-form label{
+	text-align: left;
+	font-family: roboto;
+}
+.sign-up-form p{
+	font-size: 12px;
+	text-align: center;
+}
+.sign-up-form a{
+	color: #016087;
+}
+.sign-up-form button{
+	background: rgb(7, 223, 176);
+	border-color: transparent;	
+	cursor: pointer;
+	border-radius: 30px;
+	padding: 20px;
+	width: 100%;
+	margin: 20px 0;
+	font-size: 20px;
+}
+.back-to-sign-in a{
+	color: #016087;
+	margin: 50px;
+}
 
