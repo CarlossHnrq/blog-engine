@@ -4,16 +4,20 @@
 <div class="sign-up-background">
 	<div class="sign-up-form-background">
 		<section>
-			<form>
-				<div class="sign-up-form">
-					<label>Your email adress</label>
-					<input type="text" name="email">
-					<label>Choose a username</label>
-					<input type="text" name="username">
-					<label>Choose a password</label>
-					<input type="text" name="password">
+			<form action="banco_de_dados/create.php" method="post" class="sign-up-form">
+				<div>
+					<label for="email">Your email adress</label>
+					<input type="email" name="email" id="email" maxlength="50" required>
+				</div>
+				<div>
+					<label for="nome">Choose a username</label>
+					<input type="text" name="name" id="name" maxlength="20" required autofocus>
+				</div>
+					<label for="password">Choose a password</label>
+					<input type="password" name="password" maxlength="30" required>
+				<div>
 					<p>By creating your account via any of the options below, you agree to our <a href="/">terms of service</a>.</p>
-					<button>Create your account</button>
+					<button>Create your account</button>	
 				</div>
 				<div class="back-to-sign-in">
 					<a href="sign-in.php">Already have a blog engine account?</a>
