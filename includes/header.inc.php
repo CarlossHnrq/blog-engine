@@ -14,7 +14,7 @@
 					
 				</div>
 				<div class="menu-logo">
-					<a href="/">Blog Engine</a>
+					<a href="index.php">Blog Engine</a>
 				</div>
 				<div class="menu-form">
 					<form>
