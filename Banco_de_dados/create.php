@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'conexao.php';
+include_once 'connection.php';
 
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -15,6 +15,14 @@ while($emails = $querySelect->fetch_assoc()){
 }
 
 if(in_array($email,$array_emails)){
-	$_SESSION{'msg'} = "<p class=''>".'This email is already in use'."</p>";
-	header("location:../sign-up.php")
+	$_SESSION{'msg'} = "<p class='red'>".'This email is already in use'."</p>";
+	header("location:../sign-up.php");
 }
+else{
+	$queryinsert = $link->query("insert into tb_accounts values(default, '$email', '$name', '$password')");
+	$affected_rows = mysqli_affected_rows($link);
+}
+if($affected_rows > 0){
+	header("location:../");
+}
+?>

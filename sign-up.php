@@ -1,5 +1,6 @@
 <?php include_once 'includes/head.inc.php' ?>
 <?php include_once 'includes/header.inc.php' ?>
+<?php session_start() ?>
 
 <div class="sign-up-background">
 	<div class="sign-up-form-background">
@@ -16,6 +17,12 @@
 					<label for="password">Choose a password</label>
 					<input type="password" name="password" maxlength="30" required>
 				<div>
+					<?php if(isset($_SESSION['msg'])){
+						echo $_SESSION['msg'];
+						session_unset();
+					}
+					?>
+					</br>
 					<p>By creating your account via any of the options below, you agree to our <a href="/">terms of service</a>.</p>
 					<button>Create your account</button>	
 				</div>
