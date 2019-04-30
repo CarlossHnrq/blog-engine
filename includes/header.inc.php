@@ -4,7 +4,7 @@
 					<span>The best platform</span>
 				</div>
 				<div>
-					<a href="sign-in.php">Sign in</a>
+					<a href="signin.php">Sign in</a>
 				</div>
 			</div>
 		</div>
