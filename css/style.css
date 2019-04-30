@@ -189,6 +189,17 @@ img{
 .link-sign-in{
 	color: #4b4949;
 }
+.error-message-login{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: red;
+}
+p.error-message-login{
+	font-size: 20px;
+}
+
+
 
 /*sign-up form*/
 
@@ -254,4 +265,18 @@ img{
 p.error-message{
 	font-size: 30px;
 	padding-top: 20px;
+}
+
+/*logout*/
+
+.botao-logout{
+	cursor: pointer;
+	background: #6ea6af;
+	color: #fff;
+	padding: 5px 20px;
+	border-radius: 25px; 
+	border: 1px solid transparent;
+	line-height: 17px;
+	margin: -5px 34px;
+	font-size: 15px;
 }

@@ -22,15 +22,28 @@
 				</div>
 			</div>
 			<div>
-				<form class="form-sign-in" action="" method="post">
+				<form class="form-sign-in" action="database/login-db.php" method="post">
 					<div class="separate-sign-in">
-						<input type="text" name="username" placeholder="Username">
+						<input type="text" name="mailuid" placeholder="Username/E-mail...">
 					</div>
 					<div class="separate-sign-in">
-						<input type="password" name="password" placeholder="Password">
+						<input type="password" name="pwd" placeholder="Password">
 					</div>
+					<?php  
+						if (isset($_GET['error'])) {
+							if ($_GET['error'] == "emptyfields") {
+								echo "<p class='error-message-login'>Fill in all  fields!</p>";
+							}
+							if ($_GET['error'] == "wrongpwd") {
+								echo "<p class='error-message-login'>Wrong password!</p>";
+							}
+							if ($_GET['error'] == "nouser") {
+								echo "<p class='error-message-login'>Email or Username invalid!</p>";
+							}
+						}
+					?>
 					<div class="separate-sign-in">
-						<input class="botao-sign-in" type="submit" value="Sign In" name="sign-in">
+						<input class="botao-sign-in" type="submit" value="Sign in" name="login-submit">
 					</div>
 					<div class="separate-sign-in">
 						<a href="signup.php" class="link-sign-in">Sign up</a> | <a href="/" class="link-sign-in">Can't access your account?</a>
