@@ -4,7 +4,16 @@
 					<span>The best platform</span>
 				</div>
 				<div>
-					<a href="sign-in.php">Sign in</a>
+					<?php 
+						if (isset($_SESSION['userid'])) {
+							echo '<form action="database/logout-db.php" method="post">
+							<button class= "botao-logout" type="submit" name="logout-submit">Logout</button>
+							</form>';
+						}
+						else{
+							echo '<a href="signin.php">Sign in</a>';
+						}
+					?>
 				</div>
 			</div>
 		</div>
