@@ -6,12 +6,19 @@
 				<div>
 					<?php 
 						if (isset($_SESSION['userid'])) {
-							echo '<form action="database/logout-db.php" method="post">
-							<button class= "botao-logout" type="submit" name="logout-submit">Logout</button>
-							</form>';
+							echo '<div class="space-superinfo">
+									<div class= "space-profile">
+										<a class="profile" href="profile.php">Profile</a>
+									</div>
+									<div class= "space-login-logout">
+										<form action="database/logout-db.php" method="post">
+										<button class= "botao-superinfo" type="submit" 
+										name="logout-submit">Logout</button></form>	
+									</div>
+								</div>';
 						}
 						else{
-							echo '<a href="signin.php">Sign in</a>';
+							echo '<a class= "botao-superinfo" href="signin.php">Sign in</a>';
 						}
 					?>
 				</div>
