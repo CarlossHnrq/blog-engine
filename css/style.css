@@ -42,7 +42,7 @@ img{
 	text-transform: uppercase;
 	padding: 34px;
 }
-.superinfo a{
+.botao-superinfo{
 	margin-right: 34px;
 	background: #6ea6af;
 	color: #fff;
@@ -50,6 +50,21 @@ img{
 	border-radius: 25px; 
 	border: 1px solid transparent;
 	line-height: 17px;
+	cursor: pointer;
+	margin-top: -5px;
+}
+.space-superinfo{
+	display: flex;
+	flex-wrap: wrap;
+}
+.profile{
+	font-size: 18px;
+	text-align: center;
+	color: #171fc9;
+	text-decoration: default;
+}
+.space-profile{
+	margin: 0px 40px;
 }
 /*header*/
 
@@ -182,6 +197,7 @@ img{
 	line-height: 17px;
 	padding: 7px 40px;
 	text-align: center;
+	cursor: pointer;
 }
 .separate-sign-in{
 	margin: 20px;
@@ -279,4 +295,78 @@ p.error-message{
 	line-height: 17px;
 	margin: -5px 34px;
 	font-size: 15px;
+}
+
+/*profile*/
+
+.profile-background{
+	display: flex;
+	flex-wrap: wrap;
+	background: #edeff2;
+	justify-content: center;
+}
+
+
+.profile-section-one{
+	justify-content: center;
+	margin: 20px;
+	display: block;
+	padding: 20px 200px;
+}
+.edit-profile{
+	background: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.8);
+	font-size: 15px;
+	border-radius: 4px;
+	padding: 0px 8px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 400;	
+	display: flex;
+	cursor: pointer;
+}
+.profile-posts{
+	display: flex;
+	flex-wrap: wrap;
+	background: #edeff2;
+	justify-content: center;
+}
+.profile-bio{
+	background: 0;
+	border-style: solid;
+	border-color: transparent;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+}	
+
+.edit-buttom-save{
+	background: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+	color: green;
+	font-size: 15px;
+	border-radius: 4px;
+	padding: 10px 15px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 400;	
+	display: flex;
+	cursor: pointer;
+}
+.edit-buttom-cancel{
+	background: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.8);
+	font-size: 15px;
+	border-radius: 4px;
+	padding: 10px 15px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 400;	
+	cursor: pointer;
 }
