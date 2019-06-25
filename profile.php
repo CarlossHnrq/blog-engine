@@ -1,7 +1,6 @@
 <?php include_once 'database/connection.php' ?>
 <?php include_once 'includes/head.inc.php' ?>
 <?php include_once 'includes/header.inc.php' ?>
-<?php require 'database/edit-db.php' ?>
 <?php 
 
 $userid = $_SESSION['userid'];
@@ -19,15 +18,23 @@ $email= mysqli_fetch_assoc($result2);
 <section>
 	<div class="profile-background">
 		<?php 	
-		echo 	'<div class="profile-section-one">
-					<h2 class="profile-username">'.$user['uidusers'].'</h2>
-					<a href="#">1 following</a>
-					<button class="edit-profile"><a href="edit-profile.php">Edit profile</a></button>
-				</div>';
+
+		$userid = $_SESSION['userid'];
+		$sql = "SELECT biousers, idusers FROM users WHERE idusers=$userid";
+		$result = $conn->query($sql);
+		if ($result->num_rows > 0) {
+			while ($row = $result->fetch_assoc()){
+				echo'<div class="profile-section-one">
+						<h2 class="profile-username">'.$user['uidusers'].'</h2>
+						<h4>'.$row['biousers'].'</h4>
+						<a href="#">1 following</a>
+						<button class="edit-profile"><a href="edit-profile.php">Edit profile</a></button>
+					</div>
+					<div class="profile-section-one">
+					</div>';
+			}
+		}
 		?>
-		<div class="profile-section-one">
-			<img src="">
-		</div>
 	</div>
 	<div class="profile-posts">
 		<div>
