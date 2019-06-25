@@ -8,6 +8,7 @@
 						if (isset($_SESSION['userid'])) {
 							echo '<div class="space-superinfo">
 									<div class= "space-profile">
+										<a class="profile" href="postpage.php">Write</a>
 										<a class="profile" href="profile.php">Profile</a>
 									</div>
 									<div class= "space-login-logout">

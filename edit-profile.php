@@ -22,10 +22,10 @@ $email= mysqli_fetch_assoc($result2);
 		echo 	'<div class="profile-section-one">
 					<h2 class="profile-username">'.$user['uidusers'].'</h2>
 					<a href="#">1 following</a>
-					<form action="database/edit-db.php" method="post">
+					<form action="database/edit-profile-db.php" method="post">
 						<textarea type="text" name="bio" placeholder="Enter a short bio" class="profile-bio" rows="6" cols="30"></textarea>
-					<button class="edit-buttom-save">Save</button>
-					<button class="edit-buttom-cancel">Cancel</button>
+					<button class="edit-buttom-save" name="bio-submit">Save</button>
+					<button class="edit-buttom-cancel" name="bio-cancel">Cancel</button>
 					</form>
 				</div>';
 		?>
@@ -41,6 +41,7 @@ $email= mysqli_fetch_assoc($result2);
 		</div>
 	</div>
 </section>
+
 
 <?php include_once 'includes/footer.inc.php' ?>
 
